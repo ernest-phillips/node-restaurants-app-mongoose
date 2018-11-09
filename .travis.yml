@@ -1,4 +1,12 @@
 language: node_js
 node_js: node
 services:
-- mongodb 
+- mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: TKnTNarBWN7yJtB8ZMzs1gOJvreYOewGtHpv9rk2OsD0TLq+/I7lKoiJwQeLTxdkZkZTA4cGdUXTj7OpoV1cLrbdfjm4dWASB1qyiSFoFJJhgcJkPiXZb2aLW+MxDuTDJLTFVKkEtTjii66X+F5sFDxRe9E47rnamMwtwsB5ELsHJ6pvgz+usI1km+JposnBGBRifBQ23pOeLLeQMpH+IGJuCyhu2gnVodpMa2uFbFVZNaf79ZVNVY3E757WaLOjOTnLOPPV8+hAEME83tLSEFG9FGX3S7GFwFfDe5Ray7TbTkLKfhqdb2spmpY+DsVJPLgIm9ie13GoDnmjrAUkg3hDUFNnwqPXQGfi5NmI6msm74+hyYd0z8j3azgnnIbmL4Y7V5PjBeaQNI115XJLyVqeWNYDhnJTyB1/beMoTB3kiL3FMLCt4uc1GbNfubu2RLSA4AnAzyo3w3taVGM+GTi487jTJx5ZWEHiWNSYWOpSC+PPGXRribX89cTNf02ngXpFgMW4CH0e/jM0KqfDe209p/MqLj+0+QU3eBGGhljXm8LAP3WeJ/1G8mFlxT+U4g9pAVtHsW+5Jw6s9FUCdRisJ9apOb6Zm53wQrqUWT9tL1pg9xTqyMOQ0YkDukcjia1xRK2D/oe3lYvY7FfcrzPLUw1xXoGUXJnEHBhusDc=
+  app: pure-peak-25484
+  on:
+    repo: ernest-phillips/node-restaurants-app-mongoose
+    branch: feature/with-tests
